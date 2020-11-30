@@ -159,6 +159,7 @@ public class kNN_Spatial {
 
     public static void main(String[] args) throws Exception {
         File dir = new File("tmp/");
+        if (!dir.exists()) dir.mkdir();
         String[] entries = dir.list();
         for (String s : entries) {
             File currentFile = new File(dir.getPath(), s);
